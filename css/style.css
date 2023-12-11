@@ -101,7 +101,8 @@ section .page-section, .projects{
 
 #about p{
   text-align: left;
-  padding-left: 5px;
+  padding: 20px;
+
 }
 
 #aboutmeaside{
@@ -112,7 +113,8 @@ section .page-section, .projects{
   border-right: 1px solid var(--blue);
   margin-right: 5px;
   margin-bottom: 20px;
-  margin-left: 49px;
+  margin-top: 20px;
+  
 }
 
 #workaside{
@@ -136,17 +138,18 @@ section .page-section, .projects{
   height: 400px;
   border: 3px solid gold;
   margin: 5px;
-  background-image: url(../images/02-portfolio-1.jpg);
+  background: linear-gradient(rgba(0,0,0,0.7)30%,rgba(0,0,0,0.7)30%), url(../images/02-portfolio-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
+
 
 #Project2{
   width: 49%;
   height: 150px;
   border: 3px solid gold;
   margin: 4px;
-  background-image: url(../images/02-portfolio-2.jpg);
+  background: linear-gradient(rgba(0,0,0,0.7)30%,rgba(0,0,0,0.7)30%), url(../images/02-portfolio-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -156,11 +159,22 @@ section .page-section, .projects{
   height: 150px;
   border: 3px solid gold;
   margin: 4px;
-  background-image: url(../images/02-portfolio-3.jpg);
+  background: linear-gradient(rgba(0,0,0,0.7)30%,rgba(0,0,0,0.7)30%), url(../images/02-portfolio-3.jpg);
   background-repeat: no-repeat;
   background-position: center;
-
 }
+
+#Project1 .text{
+  text-align: center;
+  padding-top: 170px;
+}
+
+#Project2, #Project3 .text{
+  padding-top: 50px;
+  text-align: center;
+  }
+
+
 
 #contactmeaside{
   width: 15%;
@@ -171,4 +185,48 @@ section .page-section, .projects{
   margin-right: 5px;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+#contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+  margin-top: 20px;
+  
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 400px;
+  padding: 30px;
+  padding-right: 50px;
+  margin-right: 35%;
+}
+
+@media only screen and (max-width: 1000px){
+  #Project2, #Project3{
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 600px){
+  .nav_links{
+    display: none;
+  }
+
+  #Project2, #Project3{
+    width: 100%;
+  }
+  aside{
+    display: none
+    ;
+  }
+
 }
