@@ -12,7 +12,7 @@
 --blue: #2E86AB;
 --white: #fff;
 }
-
+/* set the default fot for the body and background color using variables */
 body {
   margin: 0;
   padding: 0;
@@ -43,7 +43,7 @@ header h1{
   color: var(--white);
 }
 
-
+/* align logo and nav bar in the header using flexbox */
 header{
   display: flex;
   flex-direction: row;
@@ -60,6 +60,7 @@ header{
   
 }
 
+/* remove the dots from UL navbar using list-styles: none */
 .nav_links{
   list-style: none;
   display: flex;
@@ -71,6 +72,7 @@ header{
   background-color: var(--blue);
 }
 
+/* Apply the hero background image using a linear-gradient */
 .hero-banner{
   background: linear-gradient(rgba(0,0,0,0.7)30%,rgba(0,0,0,0.7)30%), url(../images/02-hero-bg.jpg);
   background-position: center;
@@ -104,8 +106,9 @@ section .page-section, .projects{
   padding: 20px;
 
 }
-
+/* align aside elements to the left of the screen*/
 #aboutmeaside{
+  float: left;
   width: 15%;
   height: 100px;
   text-align: right;
@@ -127,6 +130,8 @@ section .page-section, .projects{
   margin-right: 5px;
 }
 
+
+/* create main grid using flexbox */
 .projects{
   display: flex;
   flex-wrap: wrap;
@@ -187,6 +192,7 @@ section .page-section, .projects{
   margin-top: 20px;
 }
 
+
 #contact{
   display: flex;
   flex-direction: row;
@@ -198,6 +204,7 @@ section .page-section, .projects{
   
 }
 
+/* align nav bar using flex */
 ul{
   list-style: none;
   display: flex;
@@ -209,6 +216,7 @@ ul{
   margin-right: 35%;
 }
 
+/* medium size screens responsiveness */
 @media only screen and (max-width: 1000px){
   #Project2, #Project3{
     width: 100%;
@@ -216,6 +224,7 @@ ul{
 
 }
 
+/* small size screens responsiveness*/
 @media only screen and (max-width: 600px){
   .nav_links{
     display: none;
